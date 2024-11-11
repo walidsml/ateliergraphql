@@ -26,7 +26,7 @@ public class AteliergraphqlApplication {
         return args -> {
             // Create or retrieve a Creator
             Creator creator1 = creatorRepository.save(Creator.builder().name("Walid").email("walid@gmail.com").build());
-            Creator creator2 = creatorRepository.save(Creator.builder().name("Sarah").email("sarah@gmail.com").build());
+            Creator creator2 = creatorRepository.save(Creator.builder().name("Badr").email("sarah@gmail.com").build());
 
             // Create a list of Video entities with the specified creators
             List<Video> videos = List.of(
@@ -34,7 +34,7 @@ public class AteliergraphqlApplication {
                             .name("video 1")
                             .url("https://example.com/video1")
                             .description("Description of video 1")
-                            .datePublication(new Date())
+                            .datePublication("12/12/24")
                             .creator(creator1)
                             .build(),
 
@@ -42,7 +42,7 @@ public class AteliergraphqlApplication {
                             .name("video 2")
                             .url("https://example.com/video2")
                             .description("Description of video 2")
-                            .datePublication(new Date())
+                            .datePublication("12/12/25")
                             .creator(creator2)
                             .build()
             );

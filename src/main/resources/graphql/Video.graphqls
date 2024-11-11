@@ -6,3 +6,4 @@ description : String,
 datePublication : String,
 creator : Creator
 }
+
