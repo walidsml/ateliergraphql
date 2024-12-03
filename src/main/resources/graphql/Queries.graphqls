@@ -1,9 +1,9 @@
 type Query {
-videoList : [Video]
+#videoList : [Video]
 creatorById(id :Float) : Creator
 }
 
 type Mutation {
-    saveVideo(video: VideoRequest): Video
-    saveCreator(creator: CreatorRequest): Creator
+#    saveVideo(videoRequest: VideoRequest): Video
+    addCreator(creatorInscription: CreatorInscription): Creator
 }
